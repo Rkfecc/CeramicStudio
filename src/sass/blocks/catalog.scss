@@ -1,0 +1,185 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+
+.catalog {
+  padding-top: 50px;
+
+  &__title {
+    padding-top: 60px;
+
+  }
+
+  &__tabs {
+    display: flex;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    row-gap: 13px;
+    margin-top: 60px;
+    border: 1px solid $dark-color;
+    padding: 13px 25px;
+
+    // width: 100%;
+  }
+
+  &__tab {
+    position: relative;
+    border: none;
+    background: none;
+    padding: 0;
+    font-weight: 500;
+    // z-index: 1000;
+    font-size: 20px;
+    color: #000;
+    line-height: 100%;
+    text-transform: uppercase;
+
+    &_active::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+      bottom: -2px;
+
+
+    }
+
+  }
+
+  &__content {
+    margin-top: 60px;
+    display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+
+  }
+
+
+
+
+  &__content-item {
+    display: flex;
+    // flex-direction: column;
+
+    flex-wrap: wrap;
+    gap: 20px;
+    // justify-content: center;
+
+  }
+
+  &__card {
+
+    width: 340px;
+    min-height: 275px;
+
+    img {
+      max-inline-size: calc(100%);
+      transform: translateX(-1px) translateY(-1px);
+    }
+
+
+
+  }
+
+  &__card_descr {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid $dark-color;
+    font-size: 16px;
+    line-height: 1.4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    word-break: break-word; // розрив слів
+    transform: translateX(-1px) translateY(-2px);
+
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .catalog {
+      &__content {
+        width: 100%;
+
+
+
+      }
+
+
+    }
+
+
+
+  }
+
+  @media screen and (min-width: 768px) {
+    .catalog {
+      &__tabs {
+        display: flex;
+        width: 459px;
+        column-gap: 20px;
+        justify-content: space-between;
+
+      }
+
+      &__content {
+        position: relative;
+
+        @include angles_decoration;
+
+        &-item {
+          align-items: flex-start;
+
+          margin-top: 10px;
+          margin-left: 10px;
+        }
+
+
+      }
+
+    }
+
+
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    .catalog {
+      &__content-item {
+        margin-top: 20px;
+        margin-left: 20px;
+        // justify-content: space-between;
+
+      }
+
+    }
+
+  }
+
+  @media screen and (min-width: 1920px) {
+    .catalog {
+      &__content-item {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 20px;
+        gap: 83px;
+        // justify-content: space-between;
+
+      }
+
+      &__card {
+        // flex: 0 0 275px;
+        width: 275px;
+        min-height: 250px;
+      }
+
+    }
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,269 @@
+@use "/src/sass/base/variables.scss" as *;
+
+
+.footer {
+
+  margin-top: 45px;
+  padding: 20px 0 30px 20px;
+
+  background-color: $dark-color;
+
+  &__subtitle {
+
+    font-family: Barlow;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $main-color;
+    margin-bottom: 40px;
+    margin-top: 36px;
+  }
+
+  &__text {
+    color: $main-color;
+    margin-top: 40px;
+
+    &_centertxt {
+      text-align: center;
+    }
+
+  }
+
+  &__form {
+    margin-top: 20px;
+    // background-color: #232323;
+  }
+
+  &__input {
+    padding: 15px 0;
+    height: 48px;
+
+    color: $main-color;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline;
+    background-color: #232323;
+    width: 303px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+
+    margin-top: 10px;
+
+  }
+
+  &__label_checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: $main-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+
+    a {
+
+      margin-left: 3px;
+      text-decoration: none;
+      color: #A22DC6;
+    }
+  }
+
+  &__checkbox {
+    margin-right: 15px;
+  }
+
+
+
+
+
+
+
+
+  &__links {
+    // display: flex;
+
+    a {
+      text-decoration: none;
+      color: $main-color;
+
+    }
+  }
+
+  &__links-about {
+    padding-top: 20px;
+  }
+
+  &__links-about {
+
+    margin-top: 40px;
+  }
+
+
+  &__icon-links {
+    // display: flex;
+    font-size: 24px;
+
+    a {
+      text-decoration: none;
+      color: $main-color;
+
+    }
+
+  }
+
+  &__checkmark {
+    width: 15px;
+    height: 15px;
+    background-color: $dark-color;
+    border: 2px solid $lgrey-color;
+    border-radius: 3px;
+    display: inline-block;
+    // position: relative;
+    margin-right: 8px;
+    transition: background-color 0.2s, border-color 0.2s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+
+
+  }
+
+
+
+
+
+  // &__custom-checkbox input[type="checkbox"]:checked+.checkmark {
+  //   background-color: #4CAF50;
+  //   border-color: #4CAF50;
+  // }
+
+  // &__custom-checkbox .checkmark::after {
+  //   content: "";
+  //   position: absolute;
+  //   display: none;
+  //   left: 4px;
+  //   top: 0px;
+  //   width: 5px;
+  //   height: 10px;
+  //   border: solid white;
+  //   border-width: 0 2px 2px 0;
+  //   transform: rotate(45deg);
+  // }
+
+  // &__custom-checkbox input[type="checkbox"]:checked+.checkmark::after {
+  //   display: block;
+  // }
+
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 360px) {
+  .footer {
+
+
+
+    &__flex-block {
+      display: flex;
+      gap: 65px;
+    }
+
+
+
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .footer {
+
+    // &__flex-layout {
+    //   padding: 0 30px 0 -30px;
+
+
+
+    // }
+
+    &__links {
+      display: flex;
+      gap: 65px;
+      justify-content: space-between;
+    }
+
+    &__flex-block-disshop {
+      display: flex;
+      // flex-wrap: wrap;
+      // flex-direction: column;
+      gap: 65px;
+
+    }
+
+
+  }
+}
+
+// @media screen and (max-width: 768px) {
+//   .footer {
+
+//     // &__flex-block {
+//     //   display: flex;
+//     //   gap: 65px;
+//     //   // flex-wrap: wrap;
+//     // }
+
+//     &__flex-block-disshop {
+//       display: flex;
+//       // flex-wrap: wrap;
+//       flex-direction: column;
+//     }
+
+//     // &__links {
+//     //   display: flex;
+//     //   gap: 65px;
+//     //   justify-content: space-between;
+//     //   // flex-direction: column;
+//     // }
+//   }
+// }
+
+
+@media screen and (min-width: 1200px) {
+  .footer {
+
+
+    &__flex-layout {
+      display: flex;
+      gap: 65px;
+      justify-content: space-between;
+      // flex-direction: column;
+    }
+
+    &__flex-block-disshop {
+      display: flex;
+      // flex-wrap: wrap;
+      // flex-direction: column;
+      gap: 65px;
+
+    }
+
+
+  }
+}

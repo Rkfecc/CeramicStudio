@@ -1,0 +1,237 @@
+@use "/src/sass/base/variables.scss" as *;
+
+
+.touch {
+  // padding: 80px 50px 0 50px;
+  position: relative;
+
+
+
+  &__img {
+    width: 100%;
+    height: 342px;
+    object-fit: cover;
+    display: none;
+
+  }
+
+  // &__layout {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+
+  &__title {
+    margin-top: 40px;
+  }
+
+  &__title_about {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  &__wrapper {
+    margin-top: 80px;
+    margin-left: 28px;
+  }
+
+
+
+  &__fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__input {
+    width: 100%;
+    height: 48px;
+    border-radius: 2px;
+    color: $dark-color;
+    background-color: #fff;
+    // margin-bottom: 12px;
+    border: 2px solid #E2E1E5;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: 14px;
+
+    &:hover {
+      border: none;
+      outline: 1px solid $dark-color;
+    }
+
+    &:focus {
+      border: none;
+      outline: 1px solid $dark-color;
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      color: $dgrey-color;
+    }
+  }
+
+
+
+  &__label {
+    display: block;
+    color: $dark-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+
+    &:nth-child(2) {
+      margin-top: 8px;
+    }
+
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 48px;
+    border-radius: 2px;
+    background-color: #fff;
+    // margin-bottom: 12px;
+    border: 1px solid #E2E1E5;
+    padding: 10px 15px;
+    // font-weight: 400;
+    // font-size: 14px;
+    height: 132px;
+    resize: none;
+
+    &:hover {
+      border: none;
+      outline: 1px solid $dark-color;
+    }
+
+    &:focus {
+      border: none;
+      outline: 1px solid $dark-color;
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      color: $dgrey-color;
+    }
+
+  }
+
+  &__checkbox {
+
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+
+  }
+
+  &__check-block {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+
+    a {
+      text-decoration: none;
+      color: #A22DC6;
+      margin-left: 4px;
+    }
+
+    &__btn-default_send {
+      width: 220px;
+      height: 40px;
+    }
+  }
+
+  &__col {
+    padding: 0 10px;
+  }
+
+  &__icon-vase {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__wrapper_cta {
+    animation: slideIn 5s;
+  }
+
+  &__cta {
+    animation: slideRotate 5s;
+
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .touch {
+    &__input {
+      width: 300px;
+    }
+
+    &__textarea {
+      width: 300px;
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .touch {
+
+    &__wrapper {
+      margin-left: 0;
+    }
+
+    &__icon-vase {
+      display: none;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .touch {
+    // padding: 80px 0 0 0;
+
+    &__img {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .touch {
+    &__col {
+      padding-right: 50px;
+    }
+
+    &__img {
+      // width: 100%;
+      object-fit: none;
+    }
+
+    &__form-row {
+      display: flex;
+      gap: 45px;
+      // flex-direction: column;
+    }
+
+    &__layout {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__form {
+      position: absolute;
+    }
+
+    // &__icon-vase {
+    //   position: fixed;
+    //   right: 20px;
+    //   bottom: 20px;
+    // }
+
+  }
+}

@@ -1,0 +1,120 @@
+@use "/src/sass/base/variables.scss" as *;
+
+
+
+.slider {
+  // padding: 40px 0;
+  margin-top: 40px;
+
+  // margin-bottom: 60px;
+
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  // &__wrapper {
+  //   position: relative;
+  //   top: 0;
+  // }
+
+
+  .owl-carousel {
+    position: relative;
+  }
+
+  .owl-dots {
+    text-align: center;
+    // bottom: 0;
+    margin-top: 15px;
+  }
+
+  .owl-dot span {
+
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 0;
+    background: $dark-color;
+    // transition: background 0.3s ease;
+
+
+  }
+
+  // .owl-nav {
+  //   font-size: 25px;
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
+
+  // .owl-prev {
+  //   right: 16px;
+  // }
+
+  // .owl-next {
+  //   left: 16px;
+  // }
+
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* Щоб стрілки не перекривали контент */
+  }
+
+  .owl-prev,
+  .owl-next {
+    display: none;
+    pointer-events: all;
+    /* Вмикає клікабельність */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    /* Розмір іконки */
+    color: #333;
+    cursor: pointer;
+  }
+
+  .owl-prev {
+    margin-left: -22px;
+  }
+
+  .owl-next {
+    margin-right: -46px;
+  }
+
+
+  .owl-dot.active span {
+
+    background: $ceramic-color;
+  }
+
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .slider {
+    padding: 20px 65px 0 65px;
+    // height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider {
+
+    .owl-prev,
+    .owl-next {
+      display: block;
+    }
+  }
+}

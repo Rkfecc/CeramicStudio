@@ -1,0 +1,186 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.header {
+
+  &__menu {
+    padding: 50px 10px;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: $main-color;
+
+    transition: transform 1s;
+    z-index: 1000;
+
+    &_active {
+      transform: translateX(100%);
+
+    }
+
+    &-close {
+      width: 20px;
+      height: 20px;
+
+      span {
+        display: block;
+        width: 20px;
+        height: 1px;
+        background-color: $dark-color;
+
+        &:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          transform: translateY(8px) rotate(-45deg);
+        }
+      }
+    }
+
+    &-nav {
+      margin-top: 50px;
+      padding-left: 14px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0;
+        list-style-type: none;
+      }
+
+    }
+
+    &_link {
+      color: $dark-color;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  &__logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding-right: 5px;
+
+    a {
+      display: block;
+      color: $dark-color;
+
+      span {
+        display: block;
+        width: 20px;
+        height: 20px;
+      }
+
+
+    }
+
+
+  }
+
+  &__nav {
+
+    // margin-top:;
+    margin-top: 20px;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      // margin: 0 auto;
+      padding-left: 0;
+    }
+
+    a {
+      display: block;
+      margin: 0 auto;
+      text-decoration: none;
+      color: $dark-color;
+      text-transform: uppercase;
+
+    }
+
+
+  }
+
+  @media screen and (min-width: 768px) {
+    .header {
+
+
+
+
+      &__menu {
+
+        display: none;
+
+
+        &-nav {
+          visibility: hidden;
+
+        }
+      }
+
+      &__top {
+
+        .icon-menu {
+          visibility: hidden;
+
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header {
+
+
+
+
+      &__nav {
+
+        visibility: hidden;
+
+      }
+    }
+  }
+
+
+  @media screen and (min-width: 1920px) {
+    .header {
+      &__logo {
+        width: 150px;
+        height: 150px;
+      }
+
+      &__nav {
+        margin-top: 36px;
+
+        ul {
+          gap: 60px;
+        }
+      }
+    }
+
+  }
+}

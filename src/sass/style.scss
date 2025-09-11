@@ -1,0 +1,25 @@
+@use "/src/sass/libs/fontello.css";
+@use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/libs/owl.carousel.min.css";
+@use "/src/sass/libs/cowl.theme.default.min.css";
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/libs/ui/title.scss" as *;
+@use '/src/sass/libs/grids-min.css';
+@use '/src/sass/libs/grids-responsive-min.css';
+@use '/src/sass/base/animation.scss';
+
+
+@use 'base/basic.scss';
+@use 'blocks/promo.scss';
+@use 'libs/ui/buttons.scss';
+@use 'blocks/store.scss';
+@use 'blocks/forms.scss';
+@use 'blocks/slider.scss';
+@use 'blocks/footer.scss';
+@use 'blocks/header.scss';
+@use 'blocks/touch.scss';
+@use 'blocks/catalog.scss';
+@use 'blocks/notes.scss';
+@use 'blocks/about.scss';
+@use 'blocks/map.scss';
