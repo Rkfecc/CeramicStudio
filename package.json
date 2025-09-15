@@ -2,10 +2,10 @@
   "devDependencies": {
     "postcss-pxtorem": "^6.1.0",
     "sass": "^1.85.1",
-    "vite": "^6.2.2",
     "vite-plugin-imagemin": "^0.6.1"
   },
   "dependencies": {
+    "vite": "^6.3.6",
     "just-validate": "^4.3.0"
   },
   "scripts": {
