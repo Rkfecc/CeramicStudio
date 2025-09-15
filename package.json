@@ -1,17 +1,20 @@
 {
-  "devDependencies": {
-    "postcss-pxtorem": "^6.1.0",
-    "sass": "^1.85.1",
-    "vite-plugin-imagemin": "^0.6.1"
+  "name": "ceramic-studio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "npx vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "vite": "^6.3.6",
     "just-validate": "^4.3.0"
   },
-  "scripts": {
-    "dev": "vite",
-    "build": "node node_modules/vite/bin/vite.js build",
-    "preview": "vite preview"
+  "devDependencies": {
+    "sass": "^1.85.1",
+    "postcss-pxtorem": "^6.1.0",
+    "vite-plugin-imagemin": "^0.6.1"
   },
   "engines": {
     "node": "20.x"
