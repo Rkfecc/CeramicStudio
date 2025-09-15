@@ -10,10 +10,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        catalog: 'catalog.html',
-
-        notes: 'notes.html',
-        about: 'about.html',
+        catalog: resolve(__dirname, 'catalog.html'),
+        notes: resolve(__dirname, 'notes.html'),
+        about: resolve(__dirname, 'about.html'),
 
       },
     },
