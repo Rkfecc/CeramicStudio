@@ -1,8 +1,5 @@
 import "/src/sass/style.scss";
-import './js/script.js'
-// import './js/main.js'
+import '/src/js/script.js'
 
-// Стили
-// import './style.css'
 import JustValidate from 'just-validate';
 
