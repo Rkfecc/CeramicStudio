@@ -1,9 +1,11 @@
 import "/src/sass/style.scss";
 
 // бібліотеки
-import "jquery";
 import "owl.carousel";
+import $ from "jquery";
 
 // твій основний код
 import "./script.js";
 
+window.$ = $;
+window.jQuery = $;
