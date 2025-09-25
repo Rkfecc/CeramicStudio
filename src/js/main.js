@@ -1,5 +1,9 @@
 import "/src/sass/style.scss";
-import '/src/js/script.js'
 
-import JustValidate from 'just-validate';
+// бібліотеки
+import "jquery";
+import "owl.carousel";
+
+// твій основний код
+import "./script.js";
 

@@ -8,12 +8,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vite": "^6.3.6",
-    "just-validate": "^4.3.0"
+    "jquery": "^3.7.1",
+    "just-validate": "^4.3.0",
+    "owl.carousel": "^2.3.4",
+    "vite": "^6.3.6"
   },
   "devDependencies": {
-    "sass": "^1.85.1",
     "postcss-pxtorem": "^6.1.0",
+    "sass": "^1.85.1",
     "vite-plugin-imagemin": "^0.6.1"
   },
   "engines": {
