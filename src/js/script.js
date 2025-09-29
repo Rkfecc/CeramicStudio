@@ -1,6 +1,12 @@
 
-import JustValidate from 'just-validate';
-import $ from 'jquery';
+import JustValidate from "just-validate";
+import "/src/sass/style.scss"
+
+// import $ from "jquery";
+
+// window.$ = $;
+// window.jQuery = $;
+
 
 
 $(document).ready(function () {
