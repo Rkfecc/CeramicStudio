@@ -1,5 +1,6 @@
 
 import JustValidate from "just-validate";
+
 import "/src/sass/style.scss";
 
 
