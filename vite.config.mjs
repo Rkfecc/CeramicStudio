@@ -15,6 +15,12 @@ export default defineConfig({
         about: resolve(__dirname, 'about.html'),
 
       },
+      output: {
+        // файли завжди без хеша в назві
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`
+      }
     },
   },
 
