@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "vite preview"
   },
   "dependencies": {
     "jquery": "^3.7.1",
@@ -13,8 +13,12 @@
     "owl.carousel": "^2.3.4"
   },
   "devDependencies": {
-    "vite": "^6.3.6",
+    "postcss-pxtorem": "^6.1.0",
+    "rollup": "^4.52.3",
     "sass": "^1.85.1",
-    "postcss-pxtorem": "^6.1.0"
+    "vite": "^6.3.6"
+  },
+  "resolutions": {
+    "rollup": "4.21.0"
   }
 }
