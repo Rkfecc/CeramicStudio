@@ -1,3 +1,16 @@
 {
-  "cleanUrls": false
+  "rewrites": [
+    {
+      "source": "/catalog",
+      "destination": "/catalog.html"
+    },
+    {
+      "source": "/notes",
+      "destination": "/notes.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    }
+  ]
 }
